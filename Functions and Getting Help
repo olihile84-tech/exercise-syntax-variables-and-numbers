@@ -1,0 +1,419 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMb/rFNAA/mNcHJbUvtcBcJ",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/olihile84-tech/exercise-syntax-variables-and-numbers/blob/main/Functions%20and%20Getting%20Help\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 16,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "a9Jyk5ww6zio",
+        "outputId": "d8e8f619-0eb9-4fd8-e238-285366f66baa"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Collecting git+https://github.com/Kaggle/learntools.git\n",
+            "  Cloning https://github.com/Kaggle/learntools.git to /tmp/pip-req-build-apn0y6i7\n",
+            "  Running command git clone --filter=blob:none --quiet https://github.com/Kaggle/learntools.git /tmp/pip-req-build-apn0y6i7\n",
+            "  Resolved https://github.com/Kaggle/learntools.git to commit a0c08ac1fa73dd42ba4aecf2cce045752f14f72b\n",
+            "  Preparing metadata (setup.py) ... \u001b[?25l\u001b[?25hdone\n"
+          ]
+        }
+      ],
+      "source": [
+        "pip install -U git+https://github.com/Kaggle/learntools.git"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from learntools.core import binder\n",
+        "binder.bind(globals())\n",
+        "from learntools.python.ex2 import *\n",
+        "print(\"Setup complete!\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "RpeDc1oA7ScI",
+        "outputId": "c0605664-5267-4ef4-c120-10cff021150e"
+      },
+      "execution_count": 17,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stderr",
+          "text": [
+            "WARNING:root:Ignoring repeated attempt to bind to globals\n"
+          ]
+        },
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Setup complete!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def round_to_two_places(num):\n",
+        "  \"\"\"Return the given number rounded to two decimal places.\n",
+        "\n",
+        "  >>>round_to_two_places(3.14159)\n",
+        "  3.14\n",
+        "  \"\"\"\n",
+        "  def round_to_two_places(num):\n",
+        "      \"\"\"Return the given number rounded to two decimal places.\"\"\"\n",
+        "      return round(num,2)\n",
+        "\n",
+        "  q1.check()"
+      ],
+      "metadata": {
+        "id": "cI5SP6HxO4YI"
+      },
+      "execution_count": 18,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(round(12345,-1))\n",
+        "print(round(12345,-2))\n",
+        "print(round(12345,-3))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "LA3uutSPO76a",
+        "outputId": "ac9a5707-e0b9-4998-dec9-6dfe2715c66f"
+      },
+      "execution_count": 19,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "12340\n",
+            "12300\n",
+            "12000\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def to_smash(total_candies):\n",
+        "    \"\"\"Return the number of leftover candies that must be smashed after distributing\n",
+        "    the given number of candies evenly between 3 friends.\n",
+        "\n",
+        "    >>> to_smash(91)\n",
+        "    1\n",
+        "    \"\"\"\n",
+        "    def to_smash(total_candies, num_friends=3):\n",
+        "         \"\"\"Return the number of leftover candies that must be smashed after distributing\n",
+        "         the given number of candies evenly between 3 friends..\n",
+        "\n",
+        "         >>> to_smash(91)\n",
+        "          1\n",
+        "         >>> to_smash(91,2)\n",
+        "          1\n",
+        "         \"\"\"\n",
+        "         return total_candies % num_friends\n",
+        "\n",
+        "# Check your answer\n",
+        "q3.check()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 46
+        },
+        "id": "hQTFgIU-Nez3",
+        "outputId": "42cd8b84-1f45-442e-fab7-53f01b2b7bf0"
+      },
+      "execution_count": 20,
+      "outputs": [
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.Javascript object>"
+            ],
+            "application/javascript": [
+              "parent.postMessage({\"jupyterEvent\": \"custom.exercise_interaction\", \"data\": {\"outcomeType\": 2, \"failureMessage\": \"`to_smash` should be callable with two arguments (e.g. `to_smash(10, 2)`\", \"interactionType\": 1, \"questionType\": 2, \"questionId\": \"3_CandySmashingFunctionProblem\", \"learnToolsVersion\": \"0.3.5\", \"valueTowardsCompletion\": 0.0, \"exceptionClass\": \"\", \"trace\": \"\"}}, \"*\")"
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "Incorrect: `to_smash` should be callable with two arguments (e.g. `to_smash(10, 2)`"
+            ],
+            "text/markdown": "<span style=\"color:#cc3333\">Incorrect:</span> `to_smash` should be callable with two arguments (e.g. `to_smash(10, 2)`"
+          },
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def round_to_two_places(num):\n",
+        " \"\"\"Return the give number rounded to two decimal places.\n",
+        "\n",
+        " >>>round_to_two_places(3.14159)\n",
+        " 3.14\n",
+        " \"\"\"\n",
+        " return round(num,2)\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "956qkDFDkh7T"
+      },
+      "execution_count": 29,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def to_smash(total_candies, num_friends=3):\n",
+        "  \"\"\"...\"\"\"\n",
+        "  return total_candies%num_friends\n",
+        "\n",
+        ""
+      ],
+      "metadata": {
+        "id": "15rSPelykisO"
+      },
+      "execution_count": 28,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def double(x):\n",
+        "  \"\"\"Return twice the value of x.\"\"\"\n",
+        "  y=x+x\n",
+        "  return y"
+      ],
+      "metadata": {
+        "id": "EByYArRZki7O"
+      },
+      "execution_count": 25,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def greet(name, greeting=\"Hello\"):\n",
+        "   \"\"\"Return a greeting string for given name.\"\"\"\n",
+        "   return f\"{greeting}, {name}!\""
+      ],
+      "metadata": {
+        "id": "kYgkxu_akjFh"
+      },
+      "execution_count": 34,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = -10\n",
+        "y = abs(x)\n",
+        "print('y =', y)\n",
+        "\n",
+        "z = abs(-3.7)\n",
+        "print('z =', z)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "EAhV1l63kjPI",
+        "outputId": "5cb84b90-75bc-43ec-e4bf-cc23744a97eb"
+      },
+      "execution_count": 35,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "y = 10\n",
+            "z = 3.7\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "help(round)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "XoC6oTngkjbG",
+        "outputId": "96645706-2420-4386-b3cc-97dff434ab8b"
+      },
+      "execution_count": 36,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Help on built-in function round in module builtins:\n",
+            "\n",
+            "round(number, ndigits=None)\n",
+            "    Round a number to a given precision in decimal digits.\n",
+            "\n",
+            "    The return value is an integer if ndigits is omitted or None.  Otherwise\n",
+            "    the return value has the same type as the number.  ndigits may be negative.\n",
+            "\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "help(to_smash)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "mkNg49MFkjs_",
+        "outputId": "1741275c-d521-4abb-ebad-84711520535f"
+      },
+      "execution_count": 37,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Help on function to_smash in module __main__:\n",
+            "\n",
+            "to_smash(total_candies, num_friends=3)\n",
+            "    ...\n",
+            "\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def to_smash(total_candies):\n",
+        "     \"\"\"Return the number of leftover candies that must\n",
+        "      be smashed after distributing the given number of\n",
+        "      candies evently between 3 friends.\n",
+        "\n",
+        "      >>> to_smash(91)\n",
+        "      1\n",
+        "      \"\"\"\n",
+        "def to_smash(total_candies,num_friends=3):\n",
+        "           \"\"\"Return the number of leftover candies that must\n",
+        "              be smashed after distributing the given number of\n",
+        "              candies evently between 3 friends.\n",
+        "\n",
+        "           >>> to_smash(91)\n",
+        "             1\n",
+        "           >>> to_smash(91,2)\n",
+        "             1\n",
+        "           \"\"\"\n",
+        "           return total_candies % num_friends\n",
+        "\n",
+        "q3.check()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 46
+        },
+        "id": "lD3fiXzAvwHi",
+        "outputId": "0e4a9bcd-761f-4b7d-a05e-8a7ff9b5df34"
+      },
+      "execution_count": 51,
+      "outputs": [
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.Javascript object>"
+            ],
+            "application/javascript": [
+              "parent.postMessage({\"jupyterEvent\": \"custom.exercise_interaction\", \"data\": {\"outcomeType\": 1, \"valueTowardsCompletion\": 0.16666666666666666, \"interactionType\": 1, \"questionType\": 2, \"questionId\": \"3_CandySmashingFunctionProblem\", \"learnToolsVersion\": \"0.3.5\", \"failureMessage\": \"\", \"exceptionClass\": \"\", \"trace\": \"\"}}, \"*\")"
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "Correct"
+            ],
+            "text/markdown": "<span style=\"color:#33cc33\">Correct</span>"
+          },
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "RZsiHPnVyi9K"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "1fAyWbX5yNIo"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
