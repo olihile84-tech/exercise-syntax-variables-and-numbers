@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyMb/rFNAA/mNcHJbUvtcBcJ",
+      "authorship_tag": "ABX9TyN5vI8rdfYgo7Ixy0ycYc91",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -28,13 +28,13 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 16,
+      "execution_count": 2,
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/"
         },
         "id": "a9Jyk5ww6zio",
-        "outputId": "d8e8f619-0eb9-4fd8-e238-285366f66baa"
+        "outputId": "222782a4-0887-4d49-8992-a290a4c4069d"
       },
       "outputs": [
         {
@@ -42,10 +42,17 @@
           "name": "stdout",
           "text": [
             "Collecting git+https://github.com/Kaggle/learntools.git\n",
-            "  Cloning https://github.com/Kaggle/learntools.git to /tmp/pip-req-build-apn0y6i7\n",
-            "  Running command git clone --filter=blob:none --quiet https://github.com/Kaggle/learntools.git /tmp/pip-req-build-apn0y6i7\n",
+            "  Cloning https://github.com/Kaggle/learntools.git to /tmp/pip-req-build-s3__r42i\n",
+            "  Running command git clone --filter=blob:none --quiet https://github.com/Kaggle/learntools.git /tmp/pip-req-build-s3__r42i\n",
             "  Resolved https://github.com/Kaggle/learntools.git to commit a0c08ac1fa73dd42ba4aecf2cce045752f14f72b\n",
-            "  Preparing metadata (setup.py) ... \u001b[?25l\u001b[?25hdone\n"
+            "  Preparing metadata (setup.py) ... \u001b[?25l\u001b[?25hdone\n",
+            "Building wheels for collected packages: learntools\n",
+            "  Building wheel for learntools (setup.py) ... \u001b[?25l\u001b[?25hdone\n",
+            "  Created wheel for learntools: filename=learntools-0.3.5-py3-none-any.whl size=269685 sha256=e763aaf836dfffdc8feb494b2b5bc3ffd9acd24a03e4bd4fab5d0194114466a9\n",
+            "  Stored in directory: /tmp/pip-ephem-wheel-cache-_c477qz7/wheels/3e/56/95/47a8734b7e520ce6a601b2d09b8e0714eac8b3d59669123c80\n",
+            "Successfully built learntools\n",
+            "Installing collected packages: learntools\n",
+            "Successfully installed learntools-0.3.5\n"
           ]
         }
       ],
@@ -66,17 +73,10 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "RpeDc1oA7ScI",
-        "outputId": "c0605664-5267-4ef4-c120-10cff021150e"
+        "outputId": "67880ffb-7ddb-4b66-f9b6-af5d77923dae"
       },
-      "execution_count": 17,
+      "execution_count": 3,
       "outputs": [
-        {
-          "output_type": "stream",
-          "name": "stderr",
-          "text": [
-            "WARNING:root:Ignoring repeated attempt to bind to globals\n"
-          ]
-        },
         {
           "output_type": "stream",
           "name": "stdout",
@@ -104,7 +104,7 @@
       "metadata": {
         "id": "cI5SP6HxO4YI"
       },
-      "execution_count": 18,
+      "execution_count": 4,
       "outputs": []
     },
     {
@@ -119,9 +119,9 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "LA3uutSPO76a",
-        "outputId": "ac9a5707-e0b9-4998-dec9-6dfe2715c66f"
+        "outputId": "3a2549b7-b2b7-455e-c1e2-59d152914045"
       },
-      "execution_count": 19,
+      "execution_count": 5,
       "outputs": [
         {
           "output_type": "stream",
@@ -164,9 +164,9 @@
           "height": 46
         },
         "id": "hQTFgIU-Nez3",
-        "outputId": "42cd8b84-1f45-442e-fab7-53f01b2b7bf0"
+        "outputId": "21a81642-dbcd-476f-948b-78b88f3d87f4"
       },
-      "execution_count": 20,
+      "execution_count": 6,
       "outputs": [
         {
           "output_type": "display_data",
@@ -207,7 +207,7 @@
       "metadata": {
         "id": "956qkDFDkh7T"
       },
-      "execution_count": 29,
+      "execution_count": 7,
       "outputs": []
     },
     {
@@ -216,13 +216,12 @@
         "def to_smash(total_candies, num_friends=3):\n",
         "  \"\"\"...\"\"\"\n",
         "  return total_candies%num_friends\n",
-        "\n",
-        ""
+        "\n"
       ],
       "metadata": {
         "id": "15rSPelykisO"
       },
-      "execution_count": 28,
+      "execution_count": 8,
       "outputs": []
     },
     {
@@ -236,7 +235,7 @@
       "metadata": {
         "id": "EByYArRZki7O"
       },
-      "execution_count": 25,
+      "execution_count": 9,
       "outputs": []
     },
     {
@@ -249,7 +248,7 @@
       "metadata": {
         "id": "kYgkxu_akjFh"
       },
-      "execution_count": 34,
+      "execution_count": 10,
       "outputs": []
     },
     {
@@ -267,9 +266,9 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "EAhV1l63kjPI",
-        "outputId": "5cb84b90-75bc-43ec-e4bf-cc23744a97eb"
+        "outputId": "870cd34b-d97f-4cd1-f66a-2702a42e1277"
       },
-      "execution_count": 35,
+      "execution_count": 11,
       "outputs": [
         {
           "output_type": "stream",
@@ -291,9 +290,9 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "XoC6oTngkjbG",
-        "outputId": "96645706-2420-4386-b3cc-97dff434ab8b"
+        "outputId": "15b3446c-87e4-498b-e9ee-19078289ea04"
       },
-      "execution_count": 36,
+      "execution_count": 12,
       "outputs": [
         {
           "output_type": "stream",
@@ -321,9 +320,9 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "mkNg49MFkjs_",
-        "outputId": "1741275c-d521-4abb-ebad-84711520535f"
+        "outputId": "ba2a264d-c8d7-4eba-ccfc-c7e5f0fc5275"
       },
-      "execution_count": 37,
+      "execution_count": 13,
       "outputs": [
         {
           "output_type": "stream",
@@ -369,9 +368,9 @@
           "height": 46
         },
         "id": "lD3fiXzAvwHi",
-        "outputId": "0e4a9bcd-761f-4b7d-a05e-8a7ff9b5df34"
+        "outputId": "5382bd56-9e80-43ed-b853-83aa97fc65f5"
       },
-      "execution_count": 51,
+      "execution_count": 14,
       "outputs": [
         {
           "output_type": "display_data",
@@ -399,18 +398,196 @@
     },
     {
       "cell_type": "code",
-      "source": [],
+      "source": [
+        "def greeting(name):\n",
+        "  return \"Hello, \" +name+ \"!\"\n",
+        "\n",
+        "greeting(\"Motheo\")"
+      ],
       "metadata": {
-        "id": "RZsiHPnVyi9K"
+        "id": "RZsiHPnVyi9K",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "outputId": "e49f24b2-7f02-408e-d5d5-9c49a1005d67"
       },
-      "execution_count": null,
-      "outputs": []
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'Hello, Motheo!'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 15
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def is_even(x):\n",
+        "  if x %2 == 0:\n",
+        "    return True\n",
+        "  else:\n",
+        "    return False\n",
+        "\n",
+        "is_even(10)"
+      ],
+      "metadata": {
+        "id": "1fAyWbX5yNIo",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "def49251-1402-4966-bed1-12da9b405c92"
+      },
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "True"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 18
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "pi= 3.14159\n",
+        "\n",
+        "def circle_area(radius):\n",
+        "  return pi*radius**2\n",
+        "\n",
+        "circle_area(2)\n"
+      ],
+      "metadata": {
+        "id": "ox4X3tir1s_n",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "603217f4-29c0-40bb-e226-87314dfd6808"
+      },
+      "execution_count": 29,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "12.56636"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 29
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def highest(a,b,c):\n",
+        "  return max(a,b,c)\n",
+        "\n",
+        "highest(53,12,45)\n",
+        ""
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "-SIjQN7P06TO",
+        "outputId": "e0974e51-47e4-4a5b-a028-6f388b83eebf"
+      },
+      "execution_count": 31,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "53"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 31
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def age(x):\n",
+        "  if x >18:\n",
+        "    print (\"You can vote\")\n",
+        "  else:\n",
+        "    print(\"You can't vote\")\n",
+        "\n",
+        "\n",
+        "\n",
+        "age(12)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "78jTDGWy4NZc",
+        "outputId": "9575c39a-25d3-482a-a356-8d9bf3cf8267"
+      },
+      "execution_count": 35,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "You can't vote\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def age(x):\n",
+        "    if x > 18:\n",
+        "        return \"You can enter the party!\"\n",
+        "    else:\n",
+        "        return \"You can't enter the party\"\n",
+        "\n",
+        "message = age(19)\n",
+        "print(message)  # now you print it"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Bq-Dxt9r5X9f",
+        "outputId": "29e1dff4-c7b4-43f9-e301-abd3e9163e67"
+      },
+      "execution_count": 39,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "You can enter the party!\n"
+          ]
+        }
+      ]
     },
     {
       "cell_type": "code",
       "source": [],
       "metadata": {
-        "id": "1fAyWbX5yNIo"
+        "id": "AqXMfhAp6DCC"
       },
       "execution_count": null,
       "outputs": []
