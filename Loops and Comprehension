@@ -28,7 +28,7 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 24,
+      "execution_count": null,
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/"
@@ -67,7 +67,7 @@
         "id": "54cUUb3xenvs",
         "outputId": "be39d0d2-985d-433e-b2e5-9e5be5d85646"
       },
-      "execution_count": 25,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -105,7 +105,7 @@
         "id": "_ec_E1qQf8oe",
         "outputId": "45ba4d7e-cbf9-427b-a5f1-66d2eee5fd10"
       },
-      "execution_count": 26,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "display_data",
@@ -165,7 +165,7 @@
         "id": "44sykDzpt0xI",
         "outputId": "465154b3-073b-48c8-e0a9-eaa3a87ee781"
       },
-      "execution_count": 27,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "display_data",
@@ -225,7 +225,7 @@
         "id": "z-7MTtrOu9ww",
         "outputId": "cc419354-218a-4daf-bfcb-38b4b7d0e1be"
       },
-      "execution_count": 28,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "display_data",
@@ -275,8 +275,7 @@
         "    total = total + play_slot_machine()\n",
         "    return total / n_runs\n",
         "\n",
-        "q4.check()\n",
-        ""
+        "q4.check()\n"
       ],
       "metadata": {
         "colab": {
@@ -286,7 +285,7 @@
         "id": "mRyj9-Bevmh7",
         "outputId": "9559b077-18d4-42e3-d128-b45f03f1194c"
       },
-      "execution_count": 29,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "display_data",
@@ -348,7 +347,7 @@
       "metadata": {
         "id": "IpRUVZ_12yfW"
       },
-      "execution_count": 30,
+      "execution_count": null,
       "outputs": []
     },
     {
@@ -369,7 +368,7 @@
         "id": "0A97jMxHwSNf",
         "outputId": "f89aa23b-e485-4997-b036-8997ddb32591"
       },
-      "execution_count": 37,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "execute_result",
@@ -396,7 +395,7 @@
         "id": "DPKRmCndxZSP",
         "outputId": "458e2916-727f-434a-b50e-02f3d22547e0"
       },
-      "execution_count": 39,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -428,7 +427,7 @@
         "id": "LWBGnKHJ7KFD",
         "outputId": "10f9c2fc-f280-40bd-d51c-2935da724b0f"
       },
-      "execution_count": 41,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -459,7 +458,7 @@
         "id": "WxHkZtJy9uhf",
         "outputId": "d0924cc5-a19a-4303-b64e-0ae801e91dc6"
       },
-      "execution_count": 42,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -487,7 +486,7 @@
         "id": "jdCaJgM1-lut",
         "outputId": "b5ff52a7-55e2-4a9e-85fc-28354275dcd9"
       },
-      "execution_count": 50,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -521,7 +520,7 @@
         "id": "mhEoV8SYFlFZ",
         "outputId": "03e38b82-4423-44d8-f16a-dd8106119da4"
       },
-      "execution_count": 54,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
